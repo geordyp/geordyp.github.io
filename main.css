@@ -1,0 +1,180 @@
+.nav a {
+  color: #93B3A4;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image: url('http://kcmetrotree.com/wp-content/uploads/2015/02/kansas-city-missouri-window-tint.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:20px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.subheader {
+    background-color: #e7e7e7;
+}
+
+.subheader h1 {
+    position: relative;
+    top:20px;
+    color: #0e2f44;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.subheader .header {
+    float: left;
+    display: inline;
+    position: relative;
+    bottom: 20px;
+}
+
+.subheader .tabs {
+    float: right;
+    display: inline;
+    position: relative;
+}
+
+.nav-pills > li.active > a{
+    background-color: #0e2f44;
+}
+
+.nav-pills > li.active > a:hover{
+    background-color: #0e2f44;
+}
+
+.nav>li>a:hover {
+    background-color: #fff;
+}
+
+.experienceList .job {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #dbdbdb;
+    background-color: #cbd3db;
+    padding: 20px 30px;
+}
+
+.experienceList .content {
+    display: block;
+}
+
+.experienceList .head {
+    color: #0e2f44;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.aboutMe {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.aboutMe .status {
+    margin-top: 35px;
+}
+
+.aboutMe .mission {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #dbdbdb;
+    background-color: #cbd3db;
+    padding: 20px 30px;
+}
+
+.aboutMe .strengths {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #dbdbdb;
+    background-color: #cbd3db;
+    padding: 20px 30px;
+}
+
+.aboutMe h {
+    color: #0e2f44;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.aboutMe a {
+    color: #a4c7b7;
+    font-weight: 600;
+}
+
+.experienceList .sub {
+    color: #0e2f44;
+    font-weight: 300;
+    font-size: 17px;
+    position: relative;
+    bottom: 20px;
+}
+
+.experienceList .date {
+    color: #fff;
+    font-weight: 900;
+    font-size: 12px;
+    position: relative;
+    bottom: 35px;
+}
+
+.top a {
+    font-size: 20px;
+    color: #93B3A4;
+}
+
+.top {
+    text-align: center;
+}
+
+.learn-more {
+  background-color: #e7e7e7;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #a4c7b7;
+    font-size: 18px;
+  font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 15px;
+}
+
+.footer p {
+    font-size: 9px;
+}

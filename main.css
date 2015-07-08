@@ -1,5 +1,5 @@
 .nav a {
-  color: #5a5a5a;
+  color: #a4c7b7;
   font-size: 11px;
   font-weight: bold;
   padding: 14px 10px;
@@ -11,7 +11,7 @@
 }
 
 .jumbotron {
-  background-image:url('http://kcmetrotree.com/wp-content/uploads/2015/02/kansas-city-missouri-window-tint.jpg');
+  background-image: url('http://kcmetrotree.com/wp-content/uploads/2015/02/kansas-city-missouri-window-tint.jpg');
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,33 +34,109 @@
   color: #fff;
 }
 
+.subheader {
+    background-color: #e7e7e7;
+}
+
+.subheader h1 {
+    color: #0e2f44;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.subheader .header {
+    float: left;
+    display: inline;
+    position: relative;
+    bottom: 20px;
+}
+
+.subheader .tabs {
+    float: right;
+    display: inline;
+    position: relative;
+}
+
+.nav-pills > li.active > a{
+    background-color: #0e2f44;
+}
+
+.nav-pills > li.active > a:hover{
+    background-color: #0e2f44;
+}
+
+.nav>li>a:hover {
+    background-color: #fff;
+}
+
+.experienceList .job {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #dbdbdb;
+    background-color: #cbd3db;
+    padding: 20px 30px;
+}
+
+.experienceList .content {
+    display: block;
+}
+
+.experienceList .head {
+    color: #0e2f44;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.aboutMe {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.aboutMe .head {
+    color: #0e2f44;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.experienceList .sub {
+    color: #0e2f44;
+    font-weight: 300;
+    font-size: 17px;
+    position: relative;
+    bottom: 20px;
+}
+
+.experienceList .date {
+    color: #fff;
+    font-weight: 900;
+    font-size: 12px;
+    position: relative;
+    bottom: 35px;
+}
+
+.top a {
+    font-size: 20px;
+    color: #a4c7b7;
+}
+
+.top {
+    text-align: center;
+}
+
 .learn-more {
-  background-color: #f7f7f7;
+  background-color: #e7e7e7;
 }
 
 .learn-more h3 {
   font-family: 'Shift', sans-serif;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .learn-more a {
-  color: #00b0ff;
-}
-
-.neighborhood-guides {
-    background-color: #efefef;
-    border-bottom: 1px solid #dbdbdb;
-}
-
-.neighborhood-guides h2 {
-    color: #393c3d;
-    font-size: 24px;
-}
-
-.neighborhood-guides p {
-    font-size: 15px;
-    margin-bottom: 13px;
+  color: #a4c7b7;
+    font-size: 18px;
+  font-weight: bold;
 }
 
 .footer {
@@ -72,24 +148,6 @@
     font-size: 15px;
 }
 
-.experienceList .job {
-    margin-top: 25px;
-    margin-bottom: 50px;
-    border-bottom: 3px solid #dbdbdb;
-    background-color: #f7f7f7;
-    padding: 20px 30px;
-}
-
-.experienceList .content {
-    margin-top: 20px;
-}
-
-.experienceList h {
-    color: #3A9BF4;
-    font-weight: bold;
-    font-size: 30px;
-}
-
 .footer p {
-    font-size: 7px;
+    font-size: 9px;
 }

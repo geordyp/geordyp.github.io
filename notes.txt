@@ -1,7 +1,4 @@
 **all-pages
-<link rel="shortcut icon" href="favicon.ico">
-
-**all-pages
 .nav .container
 <li><a href="work/2015.html">Professional Experience</a></li>
 <li><a href="edu/ksu.html">Education</a></li>

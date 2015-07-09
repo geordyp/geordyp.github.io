@@ -1,4 +1,7 @@
-**index.html
+**all-pages
+<link rel="shortcut icon" href="favicon.ico">
+
+**all-pages
 .nav .container
 <li><a href="work/2015.html">Professional Experience</a></li>
 <li><a href="edu/ksu.html">Education</a></li>
@@ -11,7 +14,7 @@ Feel free to checkout <a href="#">my blog</a> to read more about what interests 
 .aboutMe .status
 To read more about what I'm working on, please checkout <a href="work/2015.html">Professional Experience</a> and <a href="edu/involvment.html">Involvement</a>.
 
-**index.html
+**all-pages
 "bottom of the page"
 <div class="learn-more">
     <div class="container">

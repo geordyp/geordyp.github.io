@@ -1,3 +1,20 @@
+a {
+    font-weight: bold;
+    color: #93B3A4;
+}
+
+p {
+    font-size: 15px;
+    padding-top: 5px;
+    color: black;
+}
+
+h {
+    font-size: 21px;
+    font-weight: 600;
+    color: #0e2f44;
+}
+
 .nav a {
   color: #93B3A4;
   font-size: 12px;
@@ -11,7 +28,7 @@
 }
 
 .jumbotron {
-  background-image: url('http://kcmetrotree.com/wp-content/uploads/2015/02/kansas-city-missouri-window-tint.jpg');
+  background-image: url('kansas-city-missouri-window-tint.jpg');
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,7 +39,7 @@
   top:20px;
 }
 
-.jumbotron h1 {
+.jumbotron h {
   color: #fff;
   font-size: 48px;  
   font-family: 'Shift', sans-serif;
@@ -38,7 +55,7 @@
     background-color: #e7e7e7;
 }
 
-.subheader h1 {
+.subheader h {
     position: relative;
     top:20px;
     color: #0e2f44;
@@ -50,7 +67,7 @@
     float: left;
     display: inline;
     position: relative;
-    bottom: 20px;
+    bottom: 25px;
 }
 
 .subheader .tabs {
@@ -71,6 +88,23 @@
     background-color: #fff;
 }
 
+.page {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.page .page-group {
+    margin-top: 40px;
+}
+
+.page .list-group {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #dbdbdb;
+    background-color: #cbd3db;
+    padding: 30px 30px;
+}
+
 .experienceList .job {
     margin-top: 25px;
     margin-bottom: 50px;
@@ -87,42 +121,6 @@
     color: #0e2f44;
     font-weight: 600;
     font-size: 30px;
-}
-
-.aboutMe {
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
-
-.aboutMe .status {
-    margin-top: 35px;
-}
-
-.aboutMe .mission {
-    margin-top: 35px;
-    margin-bottom: 50px;
-    border-bottom: 3px solid #dbdbdb;
-    background-color: #cbd3db;
-    padding: 20px 30px;
-}
-
-.aboutMe .strengths {
-    margin-top: 35px;
-    margin-bottom: 50px;
-    border-bottom: 3px solid #dbdbdb;
-    background-color: #cbd3db;
-    padding: 20px 30px;
-}
-
-.aboutMe h {
-    color: #0e2f44;
-    font-weight: 600;
-    font-size: 30px;
-}
-
-.aboutMe a {
-    color: #a4c7b7;
-    font-weight: 600;
 }
 
 .experienceList .sub {
@@ -142,37 +140,16 @@
 }
 
 .top a {
-    font-size: 20px;
-    color: #93B3A4;
+    font-size: 20px;   
 }
 
 .top {
     text-align: center;
 }
 
-.learn-more {
-  background-color: #e7e7e7;
-}
-
-.learn-more h3 {
-  font-family: 'Shift', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.learn-more a {
-  color: #a4c7b7;
-    font-size: 18px;
-  font-weight: bold;
-}
-
 .footer {
     text-align: center;
     margin-top: 20px;
-}
-
-.footer p {
-    font-size: 15px;
 }
 
 .footer p {

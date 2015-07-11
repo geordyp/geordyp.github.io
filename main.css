@@ -50,8 +50,8 @@ h1 {
 .jumbotron img {
     float: right;
     position: relative;
-    bottom: 60px;
-    right: 40px;
+    bottom: 35px;
+    right: 10px;
 }
 
 .jumbotron h {

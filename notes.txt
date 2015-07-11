@@ -1,1 +1,9 @@
-More information on what I'm working can be found in <a href="work/2015.html">Professional Experience</a> and <a href="edu/involvment.html">Involvement</a>.</p>
+ and <a href="edu/involvment.html">Involvement</a>.
+ 
+ <div class="tabs">
+    <ul class="nav nav-pills">
+        <li class="active"><a href="2015.html">2015</a></li>
+        <li><a href="2014.html">2014</a></li>
+        <li><a href="2013.html">2013</a></li>
+    </ul>
+</div>

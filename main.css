@@ -10,7 +10,7 @@ a:hover {
 p {
     font-size: 15px;
     padding-top: 5px;
-    color: black;
+    color: dimgray;
 }
 
 h {
@@ -23,6 +23,12 @@ h1 {
     font-size: 25px;
     font-weight: 600;
     color: black;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #0e2f44;
 }
 
 .nav a {
@@ -54,11 +60,10 @@ h1 {
     right: 10px;
 }
 
-.jumbotron h {
-  color: #fff;
-  font-size: 48px;  
-  font-family: 'Shift', sans-serif;
-  font-weight: bold;
+.jumbotron h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
     float: left;
     position: relative;
     bottom: 35px;
@@ -87,6 +92,7 @@ h1 {
     float: right;
     display: inline;
     position: relative;
+    
 }
 
 .nav-pills > li.active > a{
@@ -118,25 +124,13 @@ h1 {
     padding: 30px 30px;
 }
 
-.experienceList .job {
-    margin-top: 25px;
-    margin-bottom: 50px;
-    border-bottom: 3px solid #dbdbdb;
-    background-color: #cbd3db;
-    padding: 20px 30px;
-}
-
-.experienceList .content {
-    display: block;
-}
-
-.experienceList .head {
+.page .head {
     color: #0e2f44;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 25px;
 }
 
-.experienceList .sub {
+.page .sub {
     color: #0e2f44;
     font-weight: 300;
     font-size: 17px;
@@ -144,7 +138,7 @@ h1 {
     bottom: 20px;
 }
 
-.experienceList .date {
+.page .date {
     color: #fff;
     font-weight: 900;
     font-size: 12px;
@@ -154,11 +148,6 @@ h1 {
 
 .learn-more {
   background-color: #e7e7e7;
-}
-
-.learn-more h3 {
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .top a {

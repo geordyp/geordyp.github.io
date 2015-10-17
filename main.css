@@ -17,7 +17,7 @@ h1 {
     font-size: 21px;
     font-weight: 600;
     color: #0e2f44;
-    margin-top: 5px;
+    margin-top: 1px;
 }
 h2 {
     font-size: 25px;
@@ -78,6 +78,7 @@ h3 {
     color: #0e2f44;
     font-size: 38px;
     font-weight: bold;
+    margin-right: 10px;
 }
 .subheader .header {
     float: left;

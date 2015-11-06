@@ -1,34 +1,46 @@
 /********************
     GENERAL ELEMENTS
 *********************/
-a {
-    font-weight: bold;
-    color: #84a193;
-}
-a:hover {
-    color: #0e2f44;
-}
 p {
+    font-family: Rubik;
     font-size: 15px;
-    padding-top: 5px;
+    font-weight: 100;
     color: black;
+    padding-top: 5px;
 }
 h1 {
-    font-size: 21px;
+    font-family: Rubik;
+    font-size: 22px;
     font-weight: 600;
-    color: #0e2f44;
+    color: #9b9b9b;
     margin-top: 1px;
 }
 h2 {
-    font-size: 25px;
+    font-family: Rubik;
+    font-size: 28px;
     font-weight: 600;
-    color: black;
+    color: #9b9b9b;
 }
 h3 {
-    font-size: 30px;
+    font-family: Rubik;
+    font-size: 34px;
     font-weight: 600;
-    color: #0e2f44;
+    color: #9b9b9b;
 }
+a {
+    font-family: Rubik;
+    color: #5aa4e3;
+}
+a:hover {
+    color: #e3995a;
+}
+fade {
+    font-family: Rubik;
+    font-size: 15px;
+    font-weight: 100;
+    color: #9b9b9b;
+}
+
 /********************
     NAVIGATION
 *********************/
@@ -69,15 +81,11 @@ h3 {
     SUBHEADER
 *********************/
 .subheader {
-    background-color: #e7e7e7;
     padding: 5px;
 }
-.subheader h1 {
+.subheader h3 {
+    margin-top: 30px;
     position: relative;
-    top: 25px;
-    color: #0e2f44;
-    font-size: 38px;
-    font-weight: bold;
     margin-right: 10px;
 }
 .subheader .header {
@@ -95,11 +103,11 @@ h3 {
 /********************
     NAVIGATION PILLS
 *********************/
-.nav-pills > li.active > a{
-    background-color: #0e2f44;
+.nav-pills > li.active > a {
+    background-color: #5a60e3;
 }
-.nav-pills > li.active > a:hover{
-    background-color: #0e2f44;
+.nav-pills > li.active > a:hover {
+    background-color: #5a60e3;
 }
 .nav>li>a:hover {
     background-color: #fff;
@@ -124,28 +132,32 @@ h3 {
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 3px solid #dbdbdb;
-    background-color: #cbd3db;
+    border-bottom: 2px solid #9b9b9b;
+    background-color: #f4f9fd;
     padding: 20px 20px;
 }
 .page .head {
-    color: #0e2f44;
-    font-weight: 600;
+    color: #9b9b9b;
+    font-weight: 900;
     font-size: 25px;
 }
 .page .sub {
-    color: #0e2f44;
-    font-weight: 300;
+    color: #9b9b9b;
+    font-weight: 900;
     font-size: 17px;
     position: relative;
     bottom: 20px;
 }
 .page .date {
-    color: #fff;
+    color: #9b9b9b;
     font-weight: 900;
     font-size: 12px;
     position: relative;
     bottom: 35px;
+}
+.page .resume {
+    margin-top: -30px;
+    margin-bottom: 15px;
 }
 
 /********************
@@ -162,18 +174,21 @@ h3 {
     LEARN MORE
 *********************/
 .learn-more {
-    background-color: #e7e7e7;
-}
-
-/********************
-    BACK TO THE TOP
-*********************/
-.top a {
-    font-size: 20px;   
-}
-
-.top {
+    margin-top: 100px;
+    border-top: 2px solid #5aa4e3;
+    background-color: #fbfbfb;
     text-align: center;
+}
+.learn-more .item {
+    display: inline-block;
+    width: 250px;
+    height: 175px;
+    text-align: center;
+    vertical-align: top;
+    margin: 5px;
+}
+.learn-more img {
+    margin-top: 7px;
 }
 
 /********************

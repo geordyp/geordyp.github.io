@@ -177,13 +177,11 @@ fade {
     margin-top: 100px;
     border-top: 2px solid #5aa4e3;
     background-color: #fbfbfb;
-    text-align: center;
 }
 .learn-more .item {
     display: inline-block;
     width: 250px;
     height: 175px;
-    text-align: center;
     vertical-align: top;
     margin: 5px;
 }

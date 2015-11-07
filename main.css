@@ -117,11 +117,10 @@ fade {
     CONTENT CONTAINERS
 *********************/
 .page {
-    margin-top: 10px;
     margin-bottom: 30px;
 }
 .page .free-group {
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -155,10 +154,6 @@ fade {
     position: relative;
     bottom: 35px;
 }
-.page .resume {
-    margin-top: -30px;
-    margin-bottom: 15px;
-}
 
 /********************
     IMAGES
@@ -167,7 +162,6 @@ fade {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -40px;
 }
 
 /********************

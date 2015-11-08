@@ -107,7 +107,7 @@ fade {
     background-color: #5a60e3;
 }
 .nav-pills > li.active > a:hover {
-    background-color: #a4e35a;
+    background-color: #e3995a;
 }
 .nav>li>a:hover {
     background-color: #fff;
@@ -131,9 +131,15 @@ fade {
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 2px solid #a4e35a;
+    width: 95%;
+    max-width: 900px;
+    border-bottom: 2px solid #5aa4e3;
     background-color: #fcfcfc;
     padding: 20px 20px;
+}
+.page .resume {
+    margin-top: -30px;
+    margin-bottom: 15px;
 }
 .page .head {
     color: #9b9b9b;
@@ -160,6 +166,7 @@ fade {
 *********************/
 .page img {
     display: block;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }

@@ -4,7 +4,8 @@
 body {
     font-family: Rubik;
 }
-p {
+p,
+li {
     font-family: Rubik;
     font-size: 15px;
     font-weight: 100;

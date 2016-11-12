@@ -1,6 +1,9 @@
 /********************
     GENERAL ELEMENTS
 *********************/
+body {
+    font-family: Rubik;
+}
 p {
     font-family: Rubik;
     font-size: 15px;

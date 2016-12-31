@@ -1,0 +1,229 @@
+@import "main.less";
+
+.page .container {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: @blue;
+}
+
+.home-icon {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  float: left;
+  background-image: url(../../pictures/professional_headshot_square.png);
+  background-size: 40px;
+}
+
+.contain {
+  margin-top: 200px;
+}
+
+.page-name {
+  position: fixed;
+  height: 200px;
+  top: 0;
+  width: 100%;
+  background-color: @blue;
+
+  h {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.btn-pane {
+  display: inline-block;
+  float: right;
+  height: 40px;
+  width: 160px;
+}
+
+.btn {
+  display: flex;
+  float: left;
+  width: 25%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  background-color: white;
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.btn .container {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.btn--selected {
+  background-color: @orange;
+  cursor: pointer;
+
+  .btn__icon {
+    background-color: @orange;
+  }
+
+  .btn__icon--about {
+    background-image: url(../../assets/icons/ic_about_white.png);
+  }
+
+  .btn__icon--resume {
+    background-image: url(../../assets/icons/ic_resume_white.png);
+  }
+
+  .btn__icon--projects {
+    background-image: url(../../assets/icons/ic_projects_white.png);
+  }
+
+  .btn__icon--interests {
+    background-image: url(../../assets/icons/ic_interests_white.png);
+  }
+}
+
+.btn__icon {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border: none;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.btn__icon--about {
+  background-image: url(../../assets/icons/ic_about_black.png);
+}
+
+.btn__icon--resume {
+  background-image: url(../../assets/icons/ic_resume_black.png);
+}
+
+.btn__icon--projects {
+  background-image: url(../../assets/icons/ic_projects_black.png);
+}
+
+.btn__icon--interests {
+  background-image: url(../../assets/icons/ic_interests_black.png);
+}
+
+.btn:hover {
+  background-color: @orange;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+
+  .btn__icon {
+    background-color: @orange;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+  }
+
+  .btn__icon--about {
+    background-image: url(../../assets/icons/ic_about_white.png);
+  }
+
+  .btn__icon--resume {
+    background-image: url(../../assets/icons/ic_resume_white.png);
+  }
+
+  .btn__icon--projects {
+    background-image: url(../../assets/icons/ic_projects_white.png);
+  }
+
+  .btn__icon--interests {
+    background-image: url(../../assets/icons/ic_interests_white.png);
+  }
+}
+
+// @media only screen and (orientation: portrait),
+// only screen and (orientation: landscape) and (max-width: 800px) {
+//   .btn p {
+//     font-size: 16px;
+//   }
+//
+//   .btn:hover p {
+//     font-size: 18px;
+//   }
+//
+//   .card {
+//     width: 100%;
+//     max-width: 100%;
+//     padding: 0;
+//     padding-bottom: 70px;
+//     background-color: transparent;
+//   }
+//
+//   .card img {
+//     width: 100px;
+//     height: 100px;
+//     top: 25px;
+//     margin-bottom: 0;
+//   }
+//
+//   .card__text {
+//     padding: 5px;
+//     padding-top: 30px;
+//     background-color: white;
+//   }
+//
+//   .card h {
+//     font-size: 26px;
+//   }
+//
+//   .card p {
+//     font-size: 16px;
+//   }
+// }
+//
+// @media only screen and (orientation: landscape) {
+//   .motion-pane {
+//     height: 100%;
+//     width: 50%;
+//   }
+//
+//   .btn-pane {
+//     height: 100%;
+//     width: 50%;
+//   }
+// }
+//
+// @media only screen and (orientation: portrait) {
+//   .motion-pane {
+//     height: 50%;
+//     width: 100%;
+//   }
+//
+//   .btn-pane {
+//     height: 50%;
+//     width: 100%;
+//   }
+//
+//   .btn__icon {
+//     height: 15vw;
+//     width: 15vw;
+//   }
+//
+//   .card {
+//     padding-bottom: 40px;
+//   }
+// }

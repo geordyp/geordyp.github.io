@@ -1,1 +1,4 @@
 $ lessc --clean-css styles.less styles.min.css
+`npm install` in the directory containing package.json
+use imageOptim to save significant space
+`grunt` in the directory containing Gruntfile.js, but imageOptim should be enough

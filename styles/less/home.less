@@ -162,10 +162,11 @@
   float: left;
   width: 50%;
   height: 50%;
-  border: none;
+  border-top: 1px solid @gunmetal;
+  border-left: 1px solid @gunmetal;
   border-radius: 0;
   text-align: center;
-  background-color: @light_orange;
+  background-color: @bone;
   transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out;
@@ -188,7 +189,7 @@
   max-width: 80px;
   margin: auto;
   margin-bottom: 10px;
-  border: 3px solid @orange;
+  border: 3px solid @gunmetal;
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
@@ -212,14 +213,15 @@
 }
 
 .btn:hover {
-  background-color: @orange;
+  background-color: @english-vermillion;
   cursor: pointer;
   transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
 
   .btn__icon {
-    background-color: @orange;
+    background-color: @english-vermillion;
+    border: none;
   }
 
   .btn__icon--about {

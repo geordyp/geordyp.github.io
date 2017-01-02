@@ -1,2 +1,22 @@
 blue #5aa4e3
 orange #e3995a
+
+dark-blue #3d5a80
+blue #98c1d9
+light-blue #e0fbfc
+red #ee6c4d
+gunmetal #293241
+pastel-green #7dd181
+teal-deer #a1e8af
+
+red #d7263d
+green #95bf74
+turquoise #bdede0
+columbia-blue #bbdbd1
+blue-jeans #5aa4e3
+
+bone #ddd8b8
+gunmetal #293241
+blue-jeans #57b8ff
+pastel-green #7dd181
+english-vermillion #d33f49

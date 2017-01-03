@@ -8,20 +8,11 @@
 @pastel-green: #7dd181;
 @english-vermillion: #d33f49;
 
-p {
-  font-family: Rubik;
-}
-
-h {
-  font-family: Rubik;
-}
-
 p.small {
   font-size: 12px;
 }
 
 a {
-  font-family: Rubik;
   color: @blue;
 }
 
@@ -29,3 +20,163 @@ a:hover {
   color: @orange;
   cursor: pointer;
 }
+
+.body {
+  font-family: Rubik;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+// NAVIGATION
+
+.header-bar {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: @gunmetal;
+}
+
+.header-title {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  width: calc(~"100% - 240px");
+  padding-top: 4px;
+  text-align: right;
+  font-size: 22px;
+  color: white;
+}
+
+.btns {
+  display: inline-block;
+  float: right;
+  height: 40px;
+  width: 160px;
+  margin: 0 40px;
+}
+
+.btn {
+  display: flex;
+  float: left;
+  width: 25%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  background-color: @bone;
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.btn-container {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-icon {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border: none;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: @bone;
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.btn-icon--about {
+  background-image: url(../../assets/icons/ic_about_black.png);
+}
+
+.btn-icon--resume {
+  background-image: url(../../assets/icons/ic_resume_black.png);
+}
+
+.btn-icon--projects {
+  background-image: url(../../assets/icons/ic_projects_black.png);
+}
+
+.btn-icon--interests {
+  background-image: url(../../assets/icons/ic_interests_black.png);
+}
+
+.btn--selected {
+  background-color: @english-vermillion;
+  cursor: pointer;
+
+  .btn-icon {
+    background-color: @english-vermillion;
+  }
+}
+
+.btn:hover {
+  background-color: @english-vermillion;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+
+  .btn-icon {
+    background-color: @english-vermillion;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+  }
+}
+
+.btn--selected,
+.btn:hover {
+  .btn-icon--about {
+    background-image: url(../../assets/icons/ic_about_white.png);
+  }
+
+  .btn-icon--resume {
+    background-image: url(../../assets/icons/ic_resume_white.png);
+  }
+
+  .btn-icon--projects {
+    background-image: url(../../assets/icons/ic_projects_white.png);
+  }
+
+  .btn-icon--interests {
+    background-image: url(../../assets/icons/ic_interests_white.png);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .header-title {
+    width: calc(~"100% - 180px");
+    font-size: 18px;
+    padding-top: 7px;
+  }
+
+  .btns {
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+}
+
+// @media only screen and (max-width: 350px) {
+//   .header-title {
+//     width: calc(~"100% - 180px");
+//     font-size: 16px;
+//     padding-top: 8px;
+//   }
+//
+//   .btns {
+//     margin-left: 20px;
+//     margin-right: 0px;
+//   }
+// }

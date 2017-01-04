@@ -37,6 +37,7 @@
   height: auto;
   margin: auto;
   padding: 20px;
+  top: 40px;
   border-radius: 50px;
   text-align: center;
   background-color: white;
@@ -82,7 +83,9 @@
   height: 100px;
   width: 100%;
   margin-top: 20px;
-  margin-bottom: -10px;
+  margin-bottom: 5px;
+  line-height: 1.7;
+  font-size: 16px;
 }
 
 .pages {
@@ -92,6 +95,11 @@
   padding-left: calc(~"100% - 85%");
 }
 
+.icon {
+  height: 22px;
+  width: 22px;
+}
+
 .social {
   height: 100px;
   width: 50%;
@@ -99,11 +107,36 @@
   padding-right: calc(~"100% - 85%");
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 400px) {
+  .card-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: -175px;
+  }
+
+  .card-name {
+    font-size: 26px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .links {
+    font-size: 15px;
+  }
+
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
   .card {
     width: 100%;
-    max-width: 100%;
     padding: 0;
+    top: 0;
     background-color: transparent;
   }
 
@@ -126,6 +159,10 @@
 
   .text {
     font-size: 16px;
+  }
+
+  .links {
+    font-size: 15px;
   }
 
   .icon {

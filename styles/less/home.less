@@ -69,7 +69,7 @@
   width: 125px;
   bottom: 135px;
   margin: 0 auto;
-  margin-bottom: -150px;
+  margin-bottom: -175px;
   border: 3px solid white;
   border-radius: 125px;
 }
@@ -79,33 +79,26 @@
   width: 100%;
 }
 
-.links {
-  display: flex;
-  height: 100px;
+.page-links {
+  display: table;
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  line-height: 1.7 !important;
-  font-size: 16px !important;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: .9em;
 }
 
-.pages {
-  height: 100px;
-  width: 50%;
-  text-align: left;
-  padding-left: calc(~"100% - 85%");
+.link {
+  display: table-cell;
+}
+
+.social-links {
+  font-size: 1em;
 }
 
 .icon {
   height: 22px;
   width: 22px;
-}
-
-.social {
-  height: 100px;
-  width: 50%;
-  text-align: right;
-  padding-right: calc(~"100% - 85%");
 }
 
 @media only screen and (max-width: 400px) {
@@ -116,7 +109,7 @@
   .card-img {
     width: 100px;
     height: 100px;
-    margin-bottom: -175px;
+    margin-bottom: -200px;
   }
 
   .card-name {
@@ -124,11 +117,15 @@
   }
 
   .text {
-    font-size: 16px;
+    font-size: 1.1em;
   }
 
-  .links {
-    font-size: 15px;
+  .page-links {
+    font-size: .8em;
+  }
+
+  .social-links {
+    font-size: .9em;
   }
 
   .icon {

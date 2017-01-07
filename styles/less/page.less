@@ -1,13 +1,7 @@
 @import "main.less";
 
 p {
-  line-height: 1.7;
-}
-
-p,
-a,
-ul {
-  font-size: 1.2em;
+  line-height: 1.5;
 }
 
 .content-container {
@@ -20,7 +14,6 @@ ul {
   padding-left: 150px;
 }
 
-.header-content-item,
 .content-item {
   display: flex;
   flex-wrap: none;
@@ -28,24 +21,24 @@ ul {
   margin-bottom: 50px;
 }
 
-.header-content-item {
-  .underline {
-    background-color: @pastel-green;
-  }
-
-  .title {
-    font-size: 56px;
-  }
-}
-
 .text {
-  width: 100%;
+  width: auto;
   min-width: 400px;
   max-width: 700px;
 }
 
+.logo {
+  width: 20px;
+  height: auto;
+}
+
+.icons {
+  width: 18px;
+  height: 18px;
+}
+
 .picture {
-  width: 200px;
+  width: 250px;
   margin: auto;
   margin-left: 50px;
 }
@@ -91,13 +84,17 @@ footer {
     padding-left: 20px;
   }
 
+  .content-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   footer {
     right: 0;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  .header-content-item,
   .content-item {
     flex-wrap: wrap;
   }
@@ -109,18 +106,6 @@ footer {
   .picture {
     margin: auto;
     margin-top: 20px;
-  }
-
-  p,
-  a,
-  ul {
-    font-size: 1.1em;
-  }
-
-  .header-content-item {
-    .title {
-      font-size: 36px;
-    }
   }
 
   .title {

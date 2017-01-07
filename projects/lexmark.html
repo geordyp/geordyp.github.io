@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Geordy - Projects</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../styles/css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/css/page.min.css">
+    <link rel="shortcut icon" href="http://geordywilliams.com/favicon.ico?v=2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+    <div class="header-bar">
+      <div class="header-title">Projects</div>
+
+      <nav>
+      <div class="btns">
+        <a href="../about.html"><div class="btn">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--about"></div>
+          </div>
+        </div></a>
+        <a href="../resume.html"><div class="btn">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--resume"></div>
+          </div>
+        </div></a>
+        <a href="../projects.html"><div class="btn btn--selected">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--projects"></div>
+          </div>
+        </div></a>
+        <a href="../interests.html"><div class="btn">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--interests"></div>
+          </div>
+        </div></a>
+      </div>
+      </nav>
+    </div>
+    </header>
+
+    <main>
+    <div class="content-container">
+      <article>
+      <div class="content-item">
+        <div class="text">
+          <h1 class="title">Lexmark Summer Project</h1>
+          <div class="underline"></div>
+          <p>
+            <div class="text--reg"><i>Javascript, HTML, CSS</i></div>
+          </p>
+          <div class="text--reg">
+            <p>This past summer, I was a User Experience Developer Intern at Lexmark Enterprise Software. Two of the larger projects I had the opportunity to work on were redesigning their tab controls and redesigning their home interface.</p>
+            <p>Below are two images of the redesigned tabs. I updated the design of the existing tabs which is shown in the first image. Then the second image shows the minimal design which is a new option I added to the API for developers on Lexmark's web platform.</p>
+          </div>
+          <img class="pic" src="../img/lexmark/tabs.PNG"><br><br>
+          <img class="pic" src="../img/lexmark/tabs_2.PNG"><br><br>
+          <div class="text--reg">
+            <p>Then I also redesigned their home user interface. Previously, the home interface consisted of an apps tab, an activity tab, and then any tabs beyond that were created by the user and would only have widgets. The apps tab couldn't be rearranged and to edit any of the user created tabs, the user needed to go into an edit mode.</p>
+            <p>The goals of my redesign were to allow for apps and widgets to occupy the same tab and allow the user to edit a tab without needing to go into edit mode. Other changes that occured were getting rid of tab names and creating a Library which would hold all of the user's apps kind of like an app drawer on Android. My implementation of the Library was only a placeholder until an actual design had been decided on.</p>
+            <p>(I apologize for the speed of the videos. Unfortunately, I hadn't realized how quickly I moved through the demonstrations until after my last day.)</p>
+            <p>In this video, I demonstrate how the user can create tabs. At the start, the user has 3 tabs already created. At the bottom of every page is a link to add more apps and widgets which the user clicks to get to the Library. From the Library, the user grabs an app and drags it to the "+ New Tab" button to create a new tab. Then they continue to go back and forth between the Library and their newly created tab adding more apps and eventually widgets. After all the desired items are on the tab, the user is able to arrange them to their liking which is demonstrated at the end of the video.</p>
+          </div>
+          <!-- creating a new tab !-->
+          <iframe src="https://drive.google.com/file/d/0B5fw1XMCjWoCMmNlWElDZXFQalU/preview" style="display:flex; width:95%; height:425px; max-width:600px; margin: 20px auto;"></iframe>
+          <div class="text--reg">
+            <p>In this next video, I demonstrate how to delete items from a tab. First I show how a user can use the keyboard to delete an item. I use the tab key to move the focus to the "Tasks" app, then I hit the delete key. After confirming the deletion, the app is deleted and an alert is shown confirming the deletion and providing an "Undo" link to bring the deleted item back. Then I show how a user can drag an item to the "Remove" button to delete it. If the user uses this method, they won't be confronted with a confirmation dialog, but the confirmation alert will still display. Eventually, I show how clicking the "Undo" link brings back the item. Then I show how an empty tab is automatically deleted, but undoing the deletion will bring back the deleted tab as well as the item.
+          </div>
+          <!-- deleting items !-->
+          <iframe src="https://drive.google.com/file/d/0B5fw1XMCjWoCSDN0eFp2MWdZdUk/preview" style="display:flex; width:95%; height:425px; max-width:600px; margin: 20px auto;"></iframe>
+          <div class="text--reg">
+            <p>The last two videos simply show how a user can move items to other tabs.</p>
+          </div>
+          <!-- moving items 1 and 2 !-->
+          <iframe src="https://drive.google.com/file/d/0B5fw1XMCjWoCODE4empjQU1BNWc/preview" style="display:flex; width:95%; height:425px; max-width:600px; margin: 20px auto;"></iframe>
+          <iframe src="https://drive.google.com/file/d/0B5fw1XMCjWoCRHFycEJMVGF2NW8/preview" style="display:flex; width:95%; height:425px; max-width:600px; margin: 20px auto;"></iframe>
+        </div>
+      </div>
+      </article>
+
+      <footer>
+        <p class="social">
+          geowilliams6[AT]gmail.com<br>
+          <a href="../">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="http://github.com/geordyp" target="_blank">GitHub</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="http://www.linkedin.com/in/geordy-williams-6068a790/" target="_blank">LinkedIn</a>
+        </p>
+        <p class="footer">Developed by Geordy Williams. Thanks for visiting.</p>
+      </footer>
+    </div>
+    </main>
+  </div>
+</body>
+</html>

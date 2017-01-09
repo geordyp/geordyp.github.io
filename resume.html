@@ -17,28 +17,28 @@
 
     <header>
     <div class="header-bar">
-      <div class="header-title">Resume</div>
+      <div id="header-title" class="header-title">Resume</div>
 
       <nav>
       <div class="btns">
-        <a href="about.html"><div class="btn">
+        <a href="about.html"><div class="btn" onmouseover="showAboutMe()" onmouseout="showPageTitle()">
           <div class="btn-container">
             <div class="btn-icon btn-icon--about"></div>
           </div>
         </div></a>
-        <a href="resume.html"><div class="btn btn--selected">
+        <a href="resume.html"><div class="btn btn--selected" onmouseover="showResume()" onmouseout="showPageTitle()">
           <div class="btn-container">
             <div class="btn-icon btn-icon--resume"></div>
           </div>
         </div></a>
-        <a href="projects.html"><div class="btn">
+        <a href="projects.html"><div class="btn" onmouseover="showProjects()" onmouseout="showPageTitle()">
           <div class="btn-container">
             <div class="btn-icon btn-icon--projects"></div>
           </div>
         </div></a>
-        <a href="interests.html"><div class="btn">
+        <a href="http://blog.geordywilliams.com"><div class="btn" onmouseover="showBlog()" onmouseout="showPageTitle()">
           <div class="btn-container">
-            <div class="btn-icon btn-icon--interests"></div>
+            <div class="btn-icon btn-icon--blog"></div>
           </div>
         </div></a>
       </div>
@@ -69,6 +69,21 @@
         <div class="picture">
           <img class="pic" src="img/me/professional.jpg">
         </div>
+      </div>
+      </article>
+      <article>
+      <div class="content-item">
+        <div class="text">
+          <h1 class="title">Programming Languages</h1>
+          <div class="underline"></div>
+          <p>
+            <div class="text--large"><b>Most Experienced With:</b></div>
+            <div class="text--reg">Java, C#</div>
+          </p>
+          <p>
+            <div class="text--large"><b>Also Experienced With</b> (most to least):</div>
+            <div class="text--reg">HTML and CSS, Python, JavaScript, C/C++</div>
+          </p>
       </div>
       </article>
       <article>
@@ -149,15 +164,6 @@
           </div>
           <br>
           <p>
-            <div class="text--large"><b>President</b></div>
-            <div class="text--reg"><img class="logo" src="logos/dsp.png">&nbsp;&nbsp;<b><a href="http://www.k-state.edu/scholars/edgerley-franklin/" target="_blank">Edgerley-Franklin Urban Leadership</a></b></div>
-            <div class="text--reg"><i>Kansas State University</i>&nbsp;&nbsp;|&nbsp;&nbsp;August 2015 - May 2016</div>
-          </p>
-          <div class="text--reg">
-            <p>Edgerley-Franklin is about developing young leaders into influencers who won't just live life, but be impactful with their lives. Through this program, I've gained some amazing experiences like our trip to Boston over spring break 2015 where we had the opportunity to meet with various organizations who were passionately serving needs they saw in their communities. Over my years in this program, my desire to serve has only grown and after I graduate, I fully intend to be an asset to not only whatever community I end up in, but also the community I grew up in.</p>
-          </div>
-          <br>
-          <p>
             <div class="text--large"><b>Webmaster, Historian</b></div>
             <div class="text--reg"><img class="logo" src="logos/nsbe.png">&nbsp;&nbsp;<b><a href="http://www.nsbe.org/" target="_blank">National Society of Black Engineers</a></b></div>
             <div class="text--reg"><i>Kansas State University</i>&nbsp;&nbsp;|&nbsp;&nbsp;August 2014 - Present</div>
@@ -165,21 +171,37 @@
           <div class="text--reg">
             <p>The National Society of Black Engineers has allowed me to put some of my leadership ability to practice. Being a webmaster and historian, my roles aren't as much on the leadership side, but that doesn't hinder me from giving my input and helping the direction and reach of our organization. As a webmaster, I make sure to keep the content updated so that members can stay informed always be assured that what they're seeing is current.</p>
           </div>
+          <br>
+          <p>
+            <div class="text--large"><b>President</b></div>
+            <div class="text--reg"><img class="logo" src="logos/dsp.png">&nbsp;&nbsp;<b><a href="http://www.k-state.edu/scholars/edgerley-franklin/" target="_blank">Edgerley-Franklin Urban Leadership</a></b></div>
+            <div class="text--reg"><i>Kansas State University</i>&nbsp;&nbsp;|&nbsp;&nbsp;August 2015 - May 2016</div>
+          </p>
+          <div class="text--reg">
+            <p>Edgerley-Franklin is about developing young leaders into influencers who won't just live life, but be impactful with their lives. Through this program, I've gained some amazing experiences like our trip to Boston over spring break 2015 where we had the opportunity to meet with various organizations who were passionately serving needs they saw in their communities. Over my years in this program, my desire to serve has only grown and after I graduate, I fully intend to be an asset to not only whatever community I end up in, but also the community I grew up in.</p>
+          </div>
         </div>
       </div>
       </article>
 
       <footer>
         <p class="social">
-          geowilliams6[AT]gmail.com<br>
           <a href="/">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
           <a href="http://github.com/geordyp" target="_blank">GitHub</a>&nbsp;&nbsp;|&nbsp;&nbsp;
           <a href="http://www.linkedin.com/in/geordy-williams-6068a790/" target="_blank">LinkedIn</a>
         </p>
-        <p class="footer">Developed by Geordy Williams. Thanks for visiting.</p>
+        <p class="footer">Developed by Geordy Williams (geowilliams6[AT]gmail.com)<br>Thanks for visiting.</p>
       </footer>
     </div>
     </main>
   </div>
+
+  <script>
+    function showAboutMe() {document.getElementById("header-title").innerHTML = "About Me";}
+    function showResume() {document.getElementById("header-title").innerHTML = "Resume";}
+    function showProjects() {document.getElementById("header-title").innerHTML = "Projects";}
+    function showBlog() {document.getElementById("header-title").innerHTML = "Blog";}
+    function showPageTitle() {document.getElementById("header-title").innerHTML = "Resume";}
+  </script>
 </body>
 </html>

@@ -17,28 +17,28 @@
 
     <header>
     <div class="header-bar">
-      <div class="header-title">About Me</div>
+      <div id="header-title" class="header-title">About Me</div>
 
       <nav>
       <div class="btns">
-        <a href="about.html"><div class="btn btn--selected">
+        <a href="about.html"><div class="btn btn--selected" onmouseover="showAboutMe()" onmouseout="showPageTitle()">
           <div class="btn-container">
             <div class="btn-icon btn-icon--about"></div>
           </div>
         </div></a>
-        <a href="resume.html"><div class="btn">
+        <a href="resume.html"><div class="btn" onmouseover="showResume()" onmouseout="showPageTitle()">
           <div class="btn-container">
             <div class="btn-icon btn-icon--resume"></div>
           </div>
         </div></a>
-        <a href="projects.html"><div class="btn">
+        <a href="projects.html"><div class="btn" onmouseover="showProjects()" onmouseout="showPageTitle()">
           <div class="btn-container">
             <div class="btn-icon btn-icon--projects"></div>
           </div>
         </div></a>
-        <a href="interests.html"><div class="btn">
+        <a href="http://blog.geordywilliams.com"><div class="btn" onmouseover="showBlog()" onmouseout="showPageTitle()">
           <div class="btn-container">
-            <div class="btn-icon btn-icon--interests"></div>
+            <div class="btn-icon btn-icon--blog"></div>
           </div>
         </div></a>
       </div>
@@ -54,9 +54,9 @@
           <h1 class="title">Geordy Paul Williams</h1>
           <div class="underline"></div>
           <div class="text--reg">
-            <p>Welcome to my website! Here, you'll be able to see my online <img class="icons" src="assets/icons/ic_resume_black.png"> <a href="resume.html">resume</a>, checkout my <img class="icons" src="assets/icons/ic_projects_black.png"> <a href="projects.html">projects</a>, and learn about some of my <img class="icons" src="assets/icons/ic_interests_black.png"> <a href="interests.html">interests</a>.</p>
+            <p>Welcome to my website! Here, you'll be able to see my online <img class="icon" src="assets/icons/ic_resume_black.png"> <a href="resume.html">resume</a>, checkout my <img class="icon" src="assets/icons/ic_projects_black.png"> <a href="projects.html">projects</a>, and learn about some of my interests on my <img class="icon" src="assets/icons/ic_blog_black.png"> <a href="http://blog.geordywilliams.com">blog</a>.</p>
             <p>I'm a 4th year student at Kansas State University studying computer science. I was born in Torrance, California and raised in Prairie Village, Kansas. Within computer science, I'm most interested in full stack web development and video game development. I recently completed Udacity's full stack nanodegree and now I'm hoping to create some original projects using the skills I learned from that.</p>
-            <p>Currently, I'm the webmaster and historian for K-State's chapter of <a href="http://www.k-state.edu/nsbe/" target="_blank">NSBE</a> (National Society of Black Engineers). Also, I'm an organizer for CoderDojo Manhattan, a free programming club for young students to learn how code. Then in my free time, I'm working on several side projects which can be found on my <a href="projects.html">projects</a> page.</p>
+            <p>Currently, I'm the webmaster and historian for K-State's chapter of <a href="http://www.k-state.edu/nsbe/" target="_blank">NSBE</a> (National Society of Black Engineers). Also, I'm an organizer for CoderDojo Manhattan, a free programming club for young students where they can learn how code. Then in my free time, I'm working on several side projects which can be found on my <a href="projects.html">projects</a> page.</p>
           </div>
         </div>
         <div class="picture">
@@ -80,15 +80,22 @@
 
       <footer>
         <p class="social">
-          geowilliams6[AT]gmail.com<br>
           <a href="/">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
           <a href="http://github.com/geordyp" target="_blank">GitHub</a>&nbsp;&nbsp;|&nbsp;&nbsp;
           <a href="http://www.linkedin.com/in/geordy-williams-6068a790/" target="_blank">LinkedIn</a>
         </p>
-        <p class="footer">Developed by Geordy Williams. Thanks for visiting.</p>
+        <p class="footer">Developed by Geordy Williams (geowilliams6[AT]gmail.com)<br>Thanks for visiting.</p>
       </footer>
     </div>
     </main>
   </div>
+
+  <script>
+    function showAboutMe() {document.getElementById("header-title").innerHTML = "About Me";}
+    function showResume() {document.getElementById("header-title").innerHTML = "Resume";}
+    function showProjects() {document.getElementById("header-title").innerHTML = "Projects";}
+    function showBlog() {document.getElementById("header-title").innerHTML = "Blog";}
+    function showPageTitle() {document.getElementById("header-title").innerHTML = "About Me";}
+  </script>
 </body>
 </html>

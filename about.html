@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Geordy - About Me</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/page.min.css">
+    <link rel="shortcut icon" href="http://geordywilliams.com/favicon.ico?v=2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+    <div class="header-bar">
+      <div id="header-title" class="header-title">About Me</div>
+
+      <nav>
+      <div class="btns">
+        <a href="about.html"><div class="btn btn--selected" onmouseover="showAboutMe()" onmouseout="showPageTitle()">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--about"></div>
+          </div>
+        </div></a>
+        <a href="resume.html"><div class="btn" onmouseover="showResume()" onmouseout="showPageTitle()">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--resume"></div>
+          </div>
+        </div></a>
+        <a href="projects.html"><div class="btn" onmouseover="showProjects()" onmouseout="showPageTitle()">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--projects"></div>
+          </div>
+        </div></a>
+        <a href="http://blog.geordywilliams.com"><div class="btn" onmouseover="showBlog()" onmouseout="showPageTitle()">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--blog"></div>
+          </div>
+        </div></a>
+      </div>
+      </nav>
+    </div>
+    </header>
+
+    <main>
+    <div class="content-container">
+      <article>
+      <div class="content-item">
+        <div class="text">
+          <h1 class="title">Geordy Paul Williams</h1>
+          <div class="underline"></div>
+          <div class="text--reg">
+            <p>Welcome to my website! Here, you'll be able to see my online <img class="icon" src="img/icons/ic_resume_black.png"> <a href="resume.html">resume</a>, checkout my <img class="icon" src="img/icons/ic_projects_black.png"> <a href="projects.html">projects</a>, and learn about some of my interests on my <img class="icon" src="img/icons/ic_blog_black.png"> <a href="http://blog.geordywilliams.com">blog</a>.</p>
+            <p>I'm a 4th year student at Kansas State University studying computer science. I was born in Torrance, California and raised in Prairie Village, Kansas. Within computer science, I'm most interested in full stack web development and video game development. I recently completed Udacity's full stack nanodegree and now I'm hoping to create some original projects using the skills I learned from that.</p>
+            <p>Currently, I'm the webmaster and historian for K-State's chapter of <a href="http://www.k-state.edu/nsbe/" target="_blank">NSBE</a> (National Society of Black Engineers). Also, I'm an organizer for CoderDojo Manhattan, a free programming club for young students where they can learn how code. Then in my free time, I'm working on several side projects which can be found on my <a href="projects.html">projects</a> page.</p>
+          </div>
+        </div>
+        <div class="picture">
+          <img class="pic" src="img/me/casual.jpg">
+        </div>
+      </div>
+      </article>
+      <article>
+      <div class="content-item">
+        <div class="text">
+          <h1 class="title">Why Computer Science?</h1>
+          <div class="underline"></div>
+          <div class="text--reg">
+            <p>I became interested the field because of my interest in video games. In high school, soccer and video games were (and still are) my favorite pastimes. But I didn't just enjoy playing video games, I also had fun learning about how they were developed and the industry as a whole. My friends would tease me saying I read about video games a lot more than I actually played them.</p>
+            <p>When deciding my major, computer science was an obvious choice for me because even if I didn't end up in the video game industry, the field as a whole was fascinating to me. Taking my first classes in college assured me I had picked the right major as it was the first time I was genuinely excited to learn in the classroom.</p>
+            <p>Today, what I enjoy most about computer science is how I get to work with my strengths in strategic thinking and problem solving along with my values in creativity and helping others. Software has solved a lot of meaningful problems and as the field advances, I hope to be a part of some of those world impacting solutions.</p>
+          </div>
+        </div>
+      </div>
+      </article>
+
+      <footer>
+        <p class="social">
+          <a href="/">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="http://github.com/geordyp" target="_blank">GitHub</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="http://www.linkedin.com/in/geordy-williams-6068a790/" target="_blank">LinkedIn</a>
+        </p>
+        <p class="footer">Developed by Geordy Williams (geowilliams6[AT]gmail.com)<br>Thanks for visiting.</p>
+      </footer>
+    </div>
+    </main>
+  </div>
+
+  <script>
+    function showAboutMe() {document.getElementById("header-title").innerHTML = "About Me";}
+    function showResume() {document.getElementById("header-title").innerHTML = "Resume";}
+    function showProjects() {document.getElementById("header-title").innerHTML = "Projects";}
+    function showBlog() {document.getElementById("header-title").innerHTML = "Blog";}
+    function showPageTitle() {document.getElementById("header-title").innerHTML = "About Me";}
+  </script>
+</body>
+</html>

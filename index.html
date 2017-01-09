@@ -1,101 +1,92 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
     <title>Geordy Williams</title>
-    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/home.min.css">
     <link rel="shortcut icon" href="http://geordywilliams.com/favicon.ico?v=2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <div class="nav">
-        <div class="container">
-            <ul class="pull-left">
-                <li><a href="/">Home</a></li>
-                <li><a href="work/2016.html">Experience</a></li>
-                <li><a href="edu/coursework.html">Education</a></li>
-            </ul>
-            <ul class="pull-right">
-                <li><a href="supplements/resume_geordy_williams.pdf" target="_blank">Resume</a></li>
-            </ul>
+  <div class="container">
+
+    <header>
+    <div class="header-bar">
+      <div id="header-title" class="header-title">Geordy Williams</div>
+
+      <nav>
+      <div class="btns">
+        <a href="about.html"><div class="btn" onmouseover="showAboutMe()" onmouseout="showPageTitle()">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--about"></div>
+          </div>
+        </div></a>
+        <a href="resume.html"><div class="btn" onmouseover="showResume()" onmouseout="showPageTitle()">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--resume"></div>
+          </div>
+        </div></a>
+        <a href="projects.html"><div class="btn" onmouseover="showProjects()" onmouseout="showPageTitle()">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--projects"></div>
+          </div>
+        </div></a>
+        <a href="http://blog.geordywilliams.com"><div class="btn" onmouseover="showBlog()" onmouseout="showPageTitle()">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--blog"></div>
+          </div>
+        </div></a>
+      </div>
+      </nav>
+    </div>
+    </header>
+
+    <main>
+    <div class="content-container">
+      <div class="card">
+        <img class="card-img" src="img/me/professional_headshot.png" alt="Geordy Paul Williams">
+        <div class="card-text">
+          <h1 class="card-name">Geordy Paul Williams<br></h1>
+          <div class="underline"></div>
+          <p class="text">
+            <div class="text--large">
+              <b>Full Stack Web Developer</b><br>
+              <b>Computer Science Student</b><br>
+            </div>
+            <div class="text--reg">
+              Kansas State University<br>
+              Manhattan, KS<br>
+              geowilliams6[AT]gmail.com
+            </div>
+          </p>
+
+          <div class="page-links">
+            <div class="link"><a href="about.html"><img class="icon" src="img/icons/ic_about_black.png">&nbsp;about me</a></div>
+            <div class="link"><a href="resume.html"><img class="icon" src="img/icons/ic_resume_black.png">&nbsp;resume</a></div>
+            <div class="link"><a href="projects.html"><img class="icon" src="img/icons/ic_projects_black.png">&nbsp;projects</a></div>
+            <div class="link"><a href="http://blog.geordywilliams.com"><img class="icon" src="img/icons/ic_blog_black.png">&nbsp;blog</a></div>
+          </div>
+          <div class="social-links">
+            <a href="http://github.com/geordyp" target="_blank">GitHub</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://www.linkedin.com/in/geordy-williams-6068a790/" target="_blank">LinkedIn</a>
+          </div>
         </div>
+      </div>
     </div>
+    </main>
+  </div>
 
-    <div class="jumbotron">
-        <div class="container">
-            <h2>Geordy Paul Williams</h2>
-            <img src="pictures/professional_headshot.png" alt="Geordy Paul Williams" height="125" width="125">
-        </div>
-    </div>
-
-    <div class="subheader">
-        <div class="container">
-            <div class="header">
-                <h3>ABOUT ME: Computer science student who values creativity and is passionate about helping others.</h3>
-            </div>
-        </div>
-    </div>
-
-    <div class="page">
-        <div class="container">
-            <div class="free-group">
-                <h1>Introduction</h1>
-                <p>Kansas State University<br>4th Year Bachelor of Engineering in Computer Science<br>Anticipated Graduation Date: May 2018</p>
-                <p>I became interested the field because of my interest in video games. In high school, soccer and video games were (and still are) my favorite pastimes. But I didn't just enjoy playing video games, I also had fun learning about how they were developed and the industry as a whole. My friends would tease me saying I read about video games a lot more than I actually played them. </p>
-                <p>When deciding my major, computer science was an obvious choice for me because even if I didn't end up in the video game industry, the field as a whole was fascinating to me. Taking my first classes in college assured me I had picked the right major as it was the first time I was genuinely excited to learn in the classroom.</p>
-                <p>Today, what I enjoy most about computer science is how I get to work with my strengths in strategic thinking and problem solving along with my values in creativity and helping others.  Software has solved a lot of meaningful problems and as the field advances, I hope to be a part of some of those world impacting solutions.</p>
-            </div>
-
-            <img src="pictures/casual_headshot.png" alt="Geordy Williams" height="150" width="150">
-
-            <div class="free-group">
-                <h1>What I'm Up To These Days</h1>
-                <p>Alongside my academic coursework, I'm also maintaining the website for K-State's chapter of NSBE (National Society of Black Engineers) which can be found <a href="http://www.k-state.edu/nsbe" target=”_blank”>here</a>. Another project I'm working on is an Eclipse text editor plug-in which will aid in the design and analysis of water control structures as part of a research project with K-State's Department of Computer Science and Sandia National Labs. Then I'm also in the early stages of starting a <a href=”https://coderdojo.com/” target=”_blank”>CoderDojo</a> in Manhattan, Kansas. We're set to launch in October! Lastly, in my spare time, I'm enrolled in Udacity's Full Stack Web Developer Nanodegree. I've been interested in gaining some depth in web development and I couldn't be more excited to take part in this course where I'll get to learn how to build complex web applications.</p>
-            </div>
-
-            <div class="contained-group">
-                <h1>A Few Of My Favorite Things</h1>
-                <p><b>Videogame Developers:</b> Naughty Dog, Media Molecule, &amp; Drinkbox Studios</p>
-                <p><b>Podcasts:</b> This American Life, PS I Love You XOXO, &amp; Microphone Check</p>
-                <p><b>Directors:</b> Akira Kurosawa, Brad Bird, &amp; Wes Anderson</p>
-                <p><b>Artists:</b> Kendrick Lamar, Radiohead, &amp; A Tribe Called Quest</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="learn-more">
-        <div class="container">
-            <div class="item">
-                <h2>GitHub</h2>
-                <p>View my repositories on GitHub.</p>
-                <p><a href="https://github.com/geordyp">My GitHub</a></p>
-            </div>
-
-            <div class="item">
-                <h2>LinkedIn</h2>
-                <p>Check out my LinkedIn profile.</p>
-                <p><a href="https://www.linkedin.com/in/geordy-williams-6068a790">LinkedIn</a></p>
-            </div>
-
-            <div class="item">
-                <h2>Contact</h2>
-                <p>Please feel free to contact me.</p>
-                <p><a onmouseover="window.status='Contact_Geordy'; return true;" title="geowilliams6@gmail.com" onmouseout="window.status=''; return true;" href="mailto:geowilliams6@gmail.com" id="Contact_Geordy">geowilliams6[AT]gmail.com</a></p>
-            </div>
-
-            <div class="item">
-                <h2>PlayStation</h2>
-                <a href="http://gamercards.exophase.com/psn/user/g-sweeper_6/" target="_blank"><img src="http://card.exophase.com/1/893453.png" alt="PlayStation Network Profile Card"></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>Last Updated September 2016. Developed by Geordy Williams.<br>Thanks for visiting.</p>
-    </div>
-
-  </body>
+  <script>
+    function showAboutMe() {document.getElementById("header-title").innerHTML = "About Me";}
+    function showResume() {document.getElementById("header-title").innerHTML = "Resume";}
+    function showProjects() {document.getElementById("header-title").innerHTML = "Projects";}
+    function showBlog() {document.getElementById("header-title").innerHTML = "Blog";}
+    function showPageTitle() {document.getElementById("header-title").innerHTML = "Geordy Williams";}
+  </script>
+</body>
 </html>

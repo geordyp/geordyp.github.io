@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neighborhood Map</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+      <div class="leftPane">
+        <header>
+          <h1>Good Eats</h1>
+        </header>
+
+        <nav>
+          <select id="filterOptions" data-bind="options: filterOptions, value: selectedOption">
+          </select>
+          <button id="filterBtn" data-bind="click: filterBtnClicked">filter</button>
+          <button id="clearFilterBtn" data-bind="click: clearFilterBtnClicked">clear</button>
+
+          <ul id="list" data-bind="foreach: displayRsrtList">
+            <li id="listItem" data-bind="text: name, click: $parent.rsrtClicked"></li>
+          </ul>
+        </nav>
+
+        <footer>
+          <div id="footer">Powered by <a href="https://developers.google.com/maps/">Google Maps</a> and <a href="https://developers.zomato.com/">Zomato</a></div>
+        </footer>
+      </div>
+      <div class="rightPane">
+        <div id="map"></div>
+      </div>
+    </div>
+
+    <script src="js/lib/knockout-3.2.0.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5t-hmQmbEWlbaSMKcRGZQiGOsakGN0kk&callback=initMap" onerror="mapsFailedToLoad()"></script>
+</body>
+</html>

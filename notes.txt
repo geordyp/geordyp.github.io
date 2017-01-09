@@ -1,4 +1,13 @@
+- USE imageOptim to save significant space
+
+- TO CREATE MINIFIED CSS FILES
 $ lessc --clean-css styles.less ../styles.min.css
-`npm install` in the directory containing package.json
-use imageOptim to save significant space
-`grunt` in the directory containing Gruntfile.js, but imageOptim should be enough
+
+- COLOR CODES
+bone #ddd8b8
+gunmetal #293241
+blue-jeans #57b8ff
+pastel-green #7dd181
+english-vermillion #d33f49
+
+blue #5aa4e3

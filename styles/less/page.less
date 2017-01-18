@@ -6,17 +6,17 @@ p {
 
 .content-container {
   position: relative;
-  display: block;
-  height: calc(~"100vh - 40px");
-  width: 100vw;
+  height: auto;
+  width: 100%;
+  max-width: 1000px;
   top: 40px;
   padding: 20px;
-  padding-left: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content-item {
   display: flex;
-  flex-wrap: none;
   width: 100%;
   margin-bottom: 50px;
 }
@@ -58,8 +58,6 @@ p {
 }
 
 footer {
-  position: relative;
-  right: 65px;
   text-align: center;
   margin-top: 75px;
 }
@@ -86,10 +84,6 @@ footer {
   .content-item {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  footer {
-    right: 0;
   }
 }
 

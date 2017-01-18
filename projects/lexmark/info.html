@@ -17,28 +17,28 @@
 
     <header>
     <div class="header-bar">
-      <div class="header-title">Projects</div>
+      <div id="header-title" class="header-title">Projects</div>
 
       <nav>
       <div class="btns">
-        <a href="../../about.html"><div class="btn">
+        <a href="../../about.html"><div class="btn" onmouseover="showAboutMe()" onmouseout="showPageTitle()">
           <div class="btn-container">
             <div class="btn-icon btn-icon--about"></div>
           </div>
         </div></a>
-        <a href="../../resume.html"><div class="btn">
+        <a href="../../resume.html"><div class="btn" onmouseover="showResume()" onmouseout="showPageTitle()">
           <div class="btn-container">
             <div class="btn-icon btn-icon--resume"></div>
           </div>
         </div></a>
-        <a href="../../projects.html"><div class="btn btn--selected">
+        <a href="../../projects.html"><div class="btn" onmouseover="showProjects()" onmouseout="showPageTitle()">
           <div class="btn-container">
             <div class="btn-icon btn-icon--projects"></div>
           </div>
         </div></a>
-        <a href="../../interests.html"><div class="btn">
+        <a href="http://blog.geordywilliams.com"><div class="btn" onmouseover="showBlog()" onmouseout="showPageTitle()">
           <div class="btn-container">
-            <div class="btn-icon btn-icon--interests"></div>
+            <div class="btn-icon btn-icon--blog"></div>
           </div>
         </div></a>
       </div>
@@ -86,14 +86,14 @@
       </article>
 
       <footer>
-        <p class="social">
-          geowilliams6[AT]gmail.com<br>
-          <a href="/">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-          <a href="http://github.com/geordyp" target="_blank">GitHub</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-          <a href="http://www.linkedin.com/in/geordy-williams-6068a790/" target="_blank">LinkedIn</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-          <a href="http://blog.geordywilliams.com" target="_blank">Blog</a>
-        </p>
-        <p class="footer">Developed by Geordy Williams. Thanks for visiting.</p>
+        <div class="social">
+          <a href="/">Home</a>&nbsp;&nbsp;-&nbsp;&nbsp;
+          <a href="http://www.github.com/geordyp" target="_blank"><img class="social-logo" src="../../img/logos/github.png"></a>&nbsp;&nbsp;&nbsp;
+          <a href="http://www.linkedin.com/in/geordy-williams-6068a790/" target="_blank"><img class="social-logo" src="../../img/logos/linkedin.png"></a>&nbsp;&nbsp;&nbsp;
+          <a href="http://www.twitter.com/geordypaul" target="_blank"><img class="social-logo" src="../../img/logos/twitter.png"></a>&nbsp;&nbsp;&nbsp;
+          <a href="http://gamercards.exophase.com/psn/user/g-sweeper_6/" target="_blank"><img class="social-logo" src="../../img/logos/playstation.png"></a>
+        </div>
+        <p class="footer-p">Developed by Geordy Williams (geowilliams6[AT]gmail.com)<br>Thanks for visiting</p>
       </footer>
     </div>
     </main>

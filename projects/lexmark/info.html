@@ -31,7 +31,7 @@
             <div class="btn-icon btn-icon--resume"></div>
           </div>
         </div></a>
-        <a href="../../projects.html"><div class="btn" onmouseover="showProjects()" onmouseout="showPageTitle()">
+        <a href="../../projects.html"><div class="btn">
           <div class="btn-container">
             <div class="btn-icon btn-icon--projects"></div>
           </div>
@@ -53,15 +53,14 @@
         <div class="text">
           <h1 class="title">Lexmark Summer Project</h1>
           <div class="underline"></div>
-          <p>
-            <div class="text--reg"><i>Javascript, HTML, CSS</i></div>
-          </p>
+          <div class="text--reg"><i>Javascript, HTML, CSS</i></div>
+          <br>
           <div class="text--reg">
             <p>This past summer, I was a User Experience Developer Intern at Lexmark Enterprise Software. Two of the larger projects I had the opportunity to work on were redesigning their tab controls and redesigning their home interface.</p>
             <p>Below are two images of the redesigned tabs. I updated the design of the existing tabs which is shown in the first image. Then the second image shows the minimal design which is a new option I added to the API for developers on Lexmark's web platform.</p>
           </div>
-          <img class="pic" src="../../img/lexmark/tabs.PNG"><br><br>
-          <img class="pic" src="../../img/lexmark/tabs_2.PNG"><br><br>
+          <img class="pic" src="../../img/lexmark/tabs.PNG" alt="Tab image"><br><br>
+          <img class="pic" src="../../img/lexmark/tabs_2.PNG" alt="Minimal tab image"><br><br>
           <div class="text--reg">
             <p>Then I also redesigned their home user interface. Previously, the home interface consisted of an apps tab, an activity tab, and then any tabs beyond that were created by the user and would only have widgets. The apps tab couldn't be rearranged and to edit any of the user created tabs, the user needed to go into an edit mode.</p>
             <p>The goals of my redesign were to allow for apps and widgets to occupy the same tab and allow the user to edit a tab without needing to go into edit mode. Other changes that occured were getting rid of tab names and creating a Library which would hold all of the user's apps kind of like an app drawer on Android. My implementation of the Library was only a placeholder until an actual design had been decided on.</p>
@@ -88,10 +87,10 @@
       <footer>
         <div class="social">
           <a href="/">Home</a>&nbsp;&nbsp;-&nbsp;&nbsp;
-          <a href="http://www.github.com/geordyp" target="_blank"><img class="social-logo" src="../../img/logos/github.png"></a>&nbsp;&nbsp;&nbsp;
-          <a href="http://www.linkedin.com/in/geordy-williams-6068a790/" target="_blank"><img class="social-logo" src="../../img/logos/linkedin.png"></a>&nbsp;&nbsp;&nbsp;
-          <a href="http://www.twitter.com/geordypaul" target="_blank"><img class="social-logo" src="../../img/logos/twitter.png"></a>&nbsp;&nbsp;&nbsp;
-          <a href="http://gamercards.exophase.com/psn/user/g-sweeper_6/" target="_blank"><img class="social-logo" src="../../img/logos/playstation.png"></a>
+          <a href="http://www.github.com/geordyp" target="_blank"><img class="social-logo" src="img/logos/github.png" alt="GitHub link"></a>&nbsp;&nbsp;&nbsp;
+          <a href="http://www.linkedin.com/in/geordy-williams-6068a790/" target="_blank"><img class="social-logo" src="img/logos/linkedin.png" alt="LinkedIn link"></a>&nbsp;&nbsp;&nbsp;
+          <a href="http://www.twitter.com/geordypaul" target="_blank"><img class="social-logo" src="img/logos/twitter.png" alt="Twitter link"></a>&nbsp;&nbsp;&nbsp;
+          <a href="http://gamercards.exophase.com/psn/user/g-sweeper_6/" target="_blank"><img class="social-logo" src="img/logos/playstation.png" alt="PlayStation link"></a>
         </div>
         <p class="footer-p">Developed by Geordy Williams (geowilliams6[AT]gmail.com)<br>Thanks for visiting</p>
       </footer>
@@ -102,7 +101,6 @@
   <script>
     function showAboutMe() {document.getElementById("header-title").innerHTML = "About Me";}
     function showResume() {document.getElementById("header-title").innerHTML = "Resume";}
-    function showProjects() {document.getElementById("header-title").innerHTML = "Projects";}
     function showBlog() {document.getElementById("header-title").innerHTML = "Blog";}
     function showPageTitle() {document.getElementById("header-title").innerHTML = "Projects";}
 

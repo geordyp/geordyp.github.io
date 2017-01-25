@@ -1,7 +1,7 @@
 function TasksViewModel() {
   var self = this;
-  self.loginURI = "http://localhost:5000/ondeck/api/v1.0/user/login";
-  self.registerUserURI = "http://localhost:5000/ondeck/api/v1.0/user";
+  self.loginURI = "http://138.197.77.126/ondeck/api/v1.0/user/login";
+  self.registerUserURI = "http://138.197.77.126/ondeck/api/v1.0/user";
   self.serverLogin = {
     username: "geordypaul",
     password: "Appl3B3ar"

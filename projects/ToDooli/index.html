@@ -30,7 +30,7 @@
         <tr><td><b>Task</b></td><td><b>Due Date</b></td><td><b>Days Left</b></td><td><b>Options</b></td></tr>
         <!-- ko foreach: tasks -->
         <tr>
-          <td><p><i data-bind="text: commitment"></i><br><b data-bind="text: name"></b></p><p data-bind="text: notes"></p></td>
+          <td style="max-width:400px;overflow:auto;"><p><i data-bind="text: commitment"></i><br><b data-bind="text: name"></b></p><p data-bind="text: notes"></p></td>
           <td><b data-bind="text: dueDate"></b></td>
           <td><b data-bind="text: daysLeft"></b></td>
           <td>

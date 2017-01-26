@@ -61,7 +61,6 @@ function TasksViewModel() {
       self.user(data.user[0]);
       self.getActiveTasks();
     }).fail(function(jqXHR) {
-      console.log(jqXHR);
       if (jqXHR.responseText.includes("This username is taken")) {
         $("#createUserErrorMessage").html("The username is taken.");
       }

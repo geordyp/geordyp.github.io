@@ -313,3 +313,17 @@ toggleBounce = function(rsrtClicked) {
     marker.setAnimation(google.maps.Animation.BOUNCE);
   }
 };
+
+openNav = function() {
+    document.getElementById("sidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("menu").style.left = "260px";
+    document.getElementById("menu").style.visibility = "hidden";
+}
+
+closeNav = function() {
+    document.getElementById("sidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("menu").style.left = "10px";
+    document.getElementById("menu").style.visibility = "visible";
+}

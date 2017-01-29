@@ -11,7 +11,8 @@
 
 <body>
     <div class="container">
-      <div class="leftPane">
+      <div id="sidenav" class="leftPane">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
         <header>
           <h1>Good Eats</h1>
         </header>
@@ -23,15 +24,16 @@
           <button id="clearFilterBtn" data-bind="click: clearFilterBtnClicked">clear</button>
 
           <ul id="list" data-bind="foreach: displayRsrtList">
-            <li id="listItem" data-bind="text: name, click: $parent.rsrtClicked"></li>
+            <li id="listItem"><a href="javascript:void(0)" data-bind="text: name, click: $parent.rsrtClicked"></a></li>
           </ul>
         </nav>
 
         <footer>
-          <div id="footer">Powered by <a href="https://developers.google.com/maps/">Google Maps</a> and <a href="https://developers.zomato.com/">Zomato</a></div>
+          Powered by <a href="https://developers.google.com/maps/">Google Maps</a> and <a href="https://developers.zomato.com/">Zomato</a>
         </footer>
       </div>
-      <div class="rightPane">
+      <div id="main" class="rightPane">
+        <div id="menu" onclick="openNav()"><a href="javascript:void(0)">&#9776;</a></div>
         <div id="map"></div>
       </div>
     </div>

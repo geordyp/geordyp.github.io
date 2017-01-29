@@ -1,0 +1,202 @@
+/********************
+    GENERAL ELEMENTS
+*********************/
+p {
+    font-family: Rubik;
+    font-size: 15px;
+    font-weight: 100;
+    color: black;
+    padding-top: 5px;
+}
+h1 {
+    font-family: Rubik;
+    font-size: 22px;
+    font-weight: 600;
+    color: #9b9b9b;
+    margin-top: 1px;
+}
+h2 {
+    font-family: Rubik;
+    font-size: 28px;
+    font-weight: 600;
+    color: #9b9b9b;
+}
+h3 {
+    font-family: Rubik;
+    font-size: 34px;
+    font-weight: 600;
+    color: #9b9b9b;
+}
+a {
+    font-family: Rubik;
+    color: #5aa4e3;
+}
+a:hover {
+    color: #e3995a;
+}
+fade {
+    font-family: Rubik;
+    font-size: 15px;
+    font-weight: 100;
+    color: #9b9b9b;
+}
+
+/********************
+    NAVIGATION
+*********************/
+.nav a {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+}
+.nav li {
+    display: inline;
+}
+
+/********************
+    JUMBOTRON
+*********************/
+.jumbotron {
+    background-image: url('pictures/kansas-city-missouri.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.jumbotron .container {
+    padding: 10px 10px;
+    text-align: center;
+}
+.jumbotron img {
+    margin-top: 20px;
+}
+.jumbotron h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: -30px;
+}
+
+/********************
+    SUBHEADER
+*********************/
+.subheader {
+    padding: 5px;
+}
+.subheader h3 {
+    margin-top: 30px;
+    position: relative;
+    margin-right: 10px;
+}
+.subheader .header {
+    float: left;
+    display: inline;
+    position: relative;
+    bottom: 25px;
+}
+.subheader .tabs {
+    float: right;
+    display: inline;
+    position: relative; 
+}
+
+/********************
+    NAVIGATION PILLS
+*********************/
+.nav-pills > li.active > a {
+    background-color: #5a60e3;
+}
+.nav-pills > li.active > a:hover {
+    background-color: #e3995a;
+}
+.nav>li>a:hover {
+    background-color: #fff;
+}
+
+/********************
+    CONTENT CONTAINERS
+*********************/
+.page {
+    margin-bottom: 30px;
+}
+.page .free-group {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 750px;
+}
+.page .contained-group {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    max-width: 900px;
+    border-bottom: 2px solid #5aa4e3;
+    background-color: #fcfcfc;
+    padding: 20px 20px;
+}
+.page .resume {
+    margin-top: -30px;
+    margin-bottom: 15px;
+}
+.page .head {
+    color: #9b9b9b;
+    font-weight: 900;
+    font-size: 25px;
+}
+.page .sub {
+    color: #9b9b9b;
+    font-weight: 900;
+    font-size: 17px;
+    position: relative;
+    bottom: 20px;
+}
+.page .date {
+    color: #9b9b9b;
+    font-weight: 900;
+    font-size: 12px;
+    position: relative;
+    bottom: 35px;
+}
+
+/********************
+    IMAGES
+*********************/
+.page img {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/********************
+    LEARN MORE
+*********************/
+.learn-more {
+    margin-top: 100px;
+    border-top: 2px solid #5aa4e3;
+    background-color: #fbfbfb;
+    padding: 30px 10px;
+}
+.learn-more .item {
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+    margin: 10px;
+}
+.learn-more img {
+    margin-top: 7px;
+}
+
+/********************
+    FOOTER
+*********************/
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+.footer p {
+    font-size: 9px;
+}

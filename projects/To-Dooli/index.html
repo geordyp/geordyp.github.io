@@ -10,38 +10,40 @@
 </head>
 <body>
   <div id="main" class="container">
-    <div class="header">
-      <h1>To Dooli</h1>
-      <span data-bind="if: user"><a data-bind="click: logout" href="#">Logout</a></span>
-      <span data-bind="ifnot: user"><a data-bind="click: openLogin" href="#">Login</a></span>
-      <span data-bind="if: user">&nbsp;&nbsp;<a data-bind="click: openSettings" href="#">Settings</a></span>
-    </div>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <ul class="nav nav-pills">
-          <li id="pill-active" data-bind="click: getActiveTasks"><a href="#">Active</a></li>
-          <li id="pill-ondeck" data-bind="click: getOnDeckTasks"><a href="#">On Deck</a></li>
-          <li id="pill-done" data-bind="click: getDoneTasks"><a href="#">Done</a></li>
-        </ul>
+    <header>
+      <div class="header">
+        <div id="header-container" class="container">
+          <div class="pull-left">
+            <h1>To Dooli</h1>
+          </div>
+          <div class="pull-right">
+            <span data-bind="if: user"><a data-bind="click: logout" href="javascript:void(0)">Logout</a></span>
+            <span data-bind="ifnot: user"><a data-bind="click: openLogin" href="javascript:void(0)">Login</a></span>
+            <span data-bind="if: user">&nbsp;&nbsp;<a data-bind="click: openSettings" href="javascript:void(0)">Settings</a></span>
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
+    <nav>
+      <ul class="nav nav-pills">
+        <li id="pill-active" data-bind="click: getActiveTasks"><a id="pill" href="javascript:void(0)">Active</a></li>
+        <li id="pill-ondeck" data-bind="click: getOnDeckTasks"><a id="pill" href="javascript:void(0)">On Deck</a></li>
+        <li id="pill-done" data-bind="click: getDoneTasks"><a id="pill" href="javascript:void(0)">Done</a></li>
+      </ul>
+    </nav>
+    <span data-bind="if: user"><button data-bind="click: openAdd" style="margin:10px;" class="btn pull-right">Add Task</button></span>
     <span data-bind="ifnot: doneView">
       <table class="table table-striped">
-        <tr><td><b>Task</b></td><td><b>Due Date</b></td><td><b>Days Left</b></td><td><b>Options</b></td></tr>
+        <tr><td style="max-width:300px; overflow:auto;"><b>Task</b></td><td style="width:100px; overflow:auto;"><b>Due Date</b></td><td style="width:100px; overflow:auto;"><b>Days Left</b></td><td style="width:146px; overflow:auto;"><b>Options</b></td></tr>
         <!-- ko foreach: tasks -->
         <tr>
-          <td style="max-width:400px;overflow:auto;"><p><i data-bind="text: commitment"></i><br><b data-bind="text: name"></b></p><p data-bind="text: notes"></p></td>
-          <td><b data-bind="text: dueDate"></b></td>
-          <td><b data-bind="text: daysLeft"></b></td>
-          <td>
-            <button data-bind="click: $parent.openEdit" class="btn">Edit</button>
-            <button data-bind="click: $parent.openDelete" class="btn">Delete</button>
-            <span data-bind="visible: !done()">
-              <button data-bind="click: $parent.toggleDone" class="btn">Mark Done</button>
-            </span>
-            <span data-bind="visible: done()">
-              <button data-bind="click: $parent.toggleDone" class="btn">Not Done</button>
-            </span>
+          <td style="max-width:300px; overflow:auto;"><p><i data-bind="text: commitment"></i><br><b data-bind="text: name"></b></p><p data-bind="text: notes"></p></td>
+          <td style="width:100px; overflow:auto;"><b data-bind="text: dueDateString"></b></td>
+          <td style="width:100px; overflow:auto;"><b data-bind="text: daysLeft"></b></td>
+          <td style="width:146px; overflow:auto;">
+            <button data-bind="click: $parent.toggleDone" class="btn"><img id="btn-img" title="Done" alt="done button" src="img/done.png"></button>
+            <button data-bind="click: $parent.openEdit" class="btn"><img id="btn-img" title="Edit" alt="edit button" src="img/edit.png"></button>
+            <button data-bind="click: $parent.openDelete" class="btn"><img id="btn-img" title="Remove" alt="remove button" src="img/remove.png"></button>
           </td>
         </tr>
         <!-- /ko -->
@@ -49,31 +51,25 @@
     </span>
     <span data-bind="if: doneView">
       <table class="table table-striped">
-        <tr><td><b>Task</b></td><td><b>Completion Date</b></td><td><b>Options</b></td></tr>
+        <tr><td style="max-width:300px; overflow:auto;"><b>Task</b></td><td style="width:147px; overflow:auto;"><b>Completion Date</b></td><td style="width:146px; overflow:auto;"><b>Options</b></td></tr>
         <!-- ko foreach: tasks -->
         <tr>
-          <td><p><i data-bind="text: commitment"></i><br><b data-bind="text: name"></b></p><p data-bind="text: notes"></p></td>
-          <td><b data-bind="text: completionDate"></b></td>
-          <td>
-            <button data-bind="click: $parent.openEdit" class="btn">Edit</button>
-            <button data-bind="click: $parent.openDelete" class="btn">Delete</button>
-            <span data-bind="visible: !done()">
-              <button data-bind="click: $parent.toggleDone" class="btn">Mark Done</button>
-            </span>
-            <span data-bind="visible: done()">
-              <button data-bind="click: $parent.toggleDone" class="btn">Not Done</button>
-            </span>
+          <td style="max-width:300px; overflow:auto;"><p><i data-bind="text: commitment"></i><br><b data-bind="text: name"></b></p><p data-bind="text: notes"></p></td>
+          <td style="width:147px; overflow:auto;"><b data-bind="text: completionDate"></b></td>
+          <td style="width:146px; overflow:auto;">
+            <button data-bind="click: $parent.toggleDone" class="btn"><img id="btn-img" title="Not Done" alt="not done button" src="img/not-done.png"></button>
+            <button data-bind="click: $parent.openEdit" class="btn"><img id="btn-img" title="Edit" alt="edit button" src="img/edit.png"></button>
+            <button data-bind="click: $parent.openDelete" class="btn"><img id="btn-img" title="Remove" alt="remove button" src="img/remove.png"></button>
           </td>
         </tr>
         <!-- /ko -->
       </table>
     </span>
-    <span data-bind="if: user"><button data-bind="click: openAdd" class="btn">Add Task</button></span>
   </div>
 
   <div id="login" class="modal hide fade" tabindex="=1" role="dialog" aria-labelledby="loginDialogLabel" aria-hidden="true">
     <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
       <h3 id="loginDialogLabel">Login</h3>
     </div>
     <div class="modal-body">
@@ -104,7 +100,7 @@
 
   <div id="createUser" class="modal hide fade" tabindex="=1" role="dialog" aria-labelledby="loginDialogLabel" aria-hidden="true">
     <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
       <h3 id="loginDialogLabel">Create Account</h3>
     </div>
     <div class="modal-body">
@@ -140,13 +136,13 @@
 
   <div id="settings" class="modal hide fade" tabindex="=1" role="dialog" aria-labelledby="settingsDialogLabel" aria-hidden="true">
     <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
       <h3 id="settingsDialogLabel">Settings</h3>
     </div>
     <div class="modal-body">
       <form class="form-horizontal">
         <div class="control-group">
-          <label class="control-label" for="inputVision">Display tasks in <a href="#" data-toggle="popover" title="What is On Deck?" data-content="The On Deck view will gather the tasks that need your attention.">On Deck</a> that are due within __ days</label>
+          <label class="control-label" for="inputVision">Display tasks in <a href="javascript:void(0)" data-toggle="popover" data-content="The 'On Deck' view will gather the tasks that are due within the amount of days you specify here.">On Deck</a> that are due within __ days</label>
           <div class="controls">
             <input data-bind="value: vision" type="number" id="inputVision" max=60 min=1 style="width:150px;">
           </div>
@@ -164,7 +160,7 @@
 
   <div id="addTask" class="modal hide fade" tabindex="=1" role="dialog" aria-labelledby="addTaskDialogLabel" aria-hidden="true">
     <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
       <h3 id="addTaskDialogLabel">Add Task</h3>
     </div>
     <div class="modal-body">
@@ -188,7 +184,7 @@
           </div>
         </div>
         <div class="control-group">
-          <label class="control-label" for="inputHeadsUp">Add to On Deck</label>
+          <label class="control-label" for="inputHeadsUp">Add to <a href="javascript:void(0)" data-toggle="popover" title="What is On Deck?" data-content="The 'On Deck' view will gather the tasks that are due within a specified number of days (specified in settings). If a task will need your attention before then, you can use this box to specify a day for it to be added to your 'On Deck' view.">On Deck</a></label>
           <div class="controls">
             <input data-bind="value: headsUp" type="date" id="inputHeadsUp" style="width: 150px;">
           </div>
@@ -212,7 +208,7 @@
 
   <div id="editTask" class="modal hide fade" tabindex="=1" role="dialog" aria-labelledby="editTaskDialogLabel" aria-hidden="true">
     <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
       <h3 id="editTaskDialogLabel">Edit Task</h3>
     </div>
     <div class="modal-body">
@@ -236,7 +232,7 @@
           </div>
         </div>
         <div class="control-group">
-          <label class="control-label" for="inputHeadsUp">Add to On Deck</label>
+          <label class="control-label" for="inputHeadsUp">Add to <a href="javascript:void(0)" data-toggle="popover" title="What is On Deck?" data-content="The 'On Deck' view will gather the tasks that are due within a specified number of days (specified in settings). If a task will need your attention before then, you can use this box to specify a day for it to be added to your 'On Deck' view.">On Deck</a></label>
           <div class="controls">
             <input data-bind="value: headsUp" type="date" id="inputHeadsUp" style="width: 150px;">
           </div>
@@ -260,7 +256,7 @@
 
   <div id="deleteTask" class="modal hide fade" tabindex="=1" role="dialog" aria-labelledby="deleteTaskDialogLabel" aria-hidden="true">
     <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <button id="btn-close" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
       <h3 id="deleteTaskDialogLabel">Delete Task</h3>
     </div>
     <div class="modal-body">

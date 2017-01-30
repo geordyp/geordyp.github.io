@@ -26,7 +26,7 @@ function TasksViewModel() {
                              "Basic " + btoa(self.serverLogin.username + ":" + self.serverLogin.password));
       },
       error: function(jqXHR) {
-        console.log("ajax error: " + jqXHR.responseText);
+        console.error("ajax error: " + jqXHR.responseText);
       }
     };
     return $.ajax(request);
@@ -61,6 +61,7 @@ function TasksViewModel() {
       self.user(data.user[0]);
       self.getActiveTasks();
     }).fail(function(jqXHR) {
+      console.error(jqXHR);
       if (jqXHR.responseText.includes("This username is taken")) {
         $("#createUserErrorMessage").html("The username is taken.");
       }
@@ -75,7 +76,7 @@ function TasksViewModel() {
         $('#settings').modal('hide');
         self.user(data.user[0]);
     }).fail(function(jqXHR) {
-      console.log(jqXHR);
+      console.error(jqXHR);
       $("#editTaskErrorMessage").html("We couldn't update your settings.");
     });
   }
@@ -96,7 +97,7 @@ function TasksViewModel() {
       self.tasks([]);
       self.getActiveTasks();
     }).fail(function(jqXHR) {
-      console.log(jqXHR);
+      console.error(jqXHR);
       $("#addTaskErrorMessage").html("We couldn't create the task.");
     });
   }
@@ -118,7 +119,7 @@ function TasksViewModel() {
         else
           self.getDoneTasks();
     }).fail(function(jqXHR) {
-      console.log(jqXHR);
+      console.error(jqXHR);
       $("#editTaskErrorMessage").html("We couldn't update the task.");
     });
   }
@@ -139,7 +140,7 @@ function TasksViewModel() {
       else
         self.getDoneTasks();
     }).fail(function(jqXHR) {
-      console.log(jqXHR);
+      console.error(jqXHR);
       $("#deleteTaskErrorMessage").html("We couldn't delete the task.");
     });
   }
@@ -175,7 +176,7 @@ function TasksViewModel() {
         else
           self.getDoneTasks();
     }).fail(function(jqXHR) {
-      console.log(jqXHR);
+      console.error(jqXHR);
     });
   }
 
@@ -210,10 +211,13 @@ function TasksViewModel() {
     self.ajax(taskURI, "GET").done(function(data) {
       self.tasks([])
       for (var i = 0; i < data.tasks.length; i++) {
+        var dueDate = new Date(data.tasks[i].due_date)
+        var dueDateString = getDayString(dueDate.getUTCDay()) + " " + getMonthString(dueDate.getMonth()) + " " + dueDate.getUTCDate();
         self.tasks.push({
           name: ko.observable(data.tasks[i].name),
           commitment: ko.observable(data.tasks[i].commitment),
           notes: ko.observable(data.tasks[i].notes),
+          dueDateString: ko.observable(dueDateString),
           dueDate: ko.observable(data.tasks[i].due_date),
           daysLeft: ko.observable(data.tasks[i].days_left),
           headsUp: ko.observable(data.tasks[i].heads_up),
@@ -223,6 +227,60 @@ function TasksViewModel() {
         });
       }
     });
+  }
+
+  getDayString = function(d) {
+    switch (d) {
+      case 0:
+        return "Sun";
+      case 1:
+        return "Mon";
+      case 2:
+        return "Tue";
+      case 3:
+        return "Wed";
+      case 4:
+        return "Thu";
+      case 5:
+        return "Fri";
+      case 6:
+        return "Sat";
+      default:
+        console.error("day out of range");
+        return;
+    }
+  }
+
+  getMonthString = function(m) {
+    switch (m) {
+      case 0:
+        return "Jan";
+      case 1:
+        return "Feb";
+      case 2:
+        return "Mar";
+      case 3:
+        return "Apr";
+      case 4:
+        return "May";
+      case 5:
+        return "Jun";
+      case 6:
+        return "Jul";
+      case 7:
+        return "Aug";
+      case 8:
+        return "Sep";
+      case 9:
+        return "Oct";
+      case 10:
+        return "Nov";
+      case 11:
+        return "Dec";
+      default:
+        console.error("month out of range");
+        return;
+    }
   }
 
   self.openLogin();

@@ -128,17 +128,14 @@ function TasksViewModel() {
     deleteTaskViewModel.setTask(task);
   }
 
-  self.deleteTask = function(taskURI) {
-    self.ajax(taskURI, 'DELETE').done(function() {
+  self.deleteTask = function(task) {
+    self.ajax(task.uri(), 'DELETE').done(function() {
       $('#deleteTask').modal('hide');
 
-      self.tasks([]);
-      if (currentView === "active")
-        self.getActiveTasks();
-      else if (currentView === "ondeck")
-        self.getOnDeckTasks();
-      else
-        self.getDoneTasks();
+      var taskList = self.tasks();
+      var index = taskList.indexOf(task);
+      taskList.splice(index, 1);
+      self.tasks(taskList);
     }).fail(function(jqXHR) {
       console.error(jqXHR);
       $("#deleteTaskErrorMessage").html("We couldn't delete the task.");
@@ -168,13 +165,10 @@ function TasksViewModel() {
     }
 
     self.ajax(task.uri(), 'PUT', data).done(function(data) {
-        self.tasks([]);
-        if (currentView === "active")
-          self.getActiveTasks();
-        else if (currentView === "ondeck")
-          self.getOnDeckTasks();
-        else
-          self.getDoneTasks();
+      var taskList = self.tasks();
+      var index = taskList.indexOf(task);
+      taskList.splice(index, 1);
+      self.tasks(taskList);
     }).fail(function(jqXHR) {
       console.error(jqXHR);
     });
@@ -367,8 +361,6 @@ function AddTaskViewModel() {
       $("#addTaskErrorMessage").html("Please fill in Task, Commitment, and Due Date.");
     }
     else {
-      console.log(self.dueDate());
-
       tasksViewModel.addTask({
         name: self.name(),
         commitment: self.commitment(),
@@ -444,7 +436,7 @@ function DeleteTaskViewModel() {
   }
 
   self.deleteTask = function() {
-    tasksViewModel.deleteTask(self.task.uri());
+    tasksViewModel.deleteTask(self.task);
     $("#deleteTaskErrorMessage").html("");
   }
 }

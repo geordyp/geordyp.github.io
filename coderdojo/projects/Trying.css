@@ -1,0 +1,27 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding-left: 20px;
+  border: 45px double #061587;
+  background-color: #ff4f6c;
+}
+
+h1 {
+font-family: 'Lobster', cursive;
+font-size: 60px;
+}
+
+p {
+font-family: 'Old Standard TT', serif;
+font-size:25px;
+}
+li {
+  font-family: 'Quicksand', sans-serif;
+  font-size:18px;
+}
+a {
+  color:#40f40e;
+}

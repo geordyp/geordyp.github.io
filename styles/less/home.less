@@ -6,11 +6,12 @@
   height: calc(~"100vh - 40px");
   width: 100vw;
   top: 40px;
-  background: linear-gradient(270deg, #7dd181, #5aa4e3);
+  overflow: hidden;
+  background: linear-gradient(270deg, @pastel-green, @blue-jeans);
   background-size: 400% 400%;
-  -webkit-animation: seafoam 60s ease infinite;
-  -moz-animation: seafoam 60s ease infinite;
-  animation: seafoam 60s ease infinite;
+  -webkit-animation: seafoam 30s ease infinite;
+  -moz-animation: seafoam 30s ease infinite;
+  animation: seafoam 30s ease infinite;
 }
 
 @-webkit-keyframes seafoam {
@@ -52,12 +53,6 @@
   background-color: @english-vermillion;
 }
 
-.card-name {
-  font-size: 32px;
-  font-weight: bold;
-  line-height: 120%;
-}
-
 .text {
   line-height: 120%;
   font-size: 20px;
@@ -77,6 +72,16 @@
 .card-text {
   height: 100%;
   width: 100%;
+}
+
+.text-home--large {
+  font-size: 1.3em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-home--reg {
+  font-size: 1.1em;
+  font-family: 'Roboto', sans-serif;
 }
 
 .link {

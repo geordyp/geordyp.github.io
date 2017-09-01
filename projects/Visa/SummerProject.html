@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" type="text/css" href="../../styles/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/css/page.min.css">
+  <link rel="shortcut icon" href="http://geordywilliams.com/favicon.ico?v=2">
+  <title>Geordy - Projects</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+    <div class="header-bar">
+      <div id="header-title" class="header-title">Projects</div>
+
+      <nav>
+      <div class="btns">
+        <a href="../../about.html"><div class="btn" onmouseover="showAboutMe()" onmouseout="showPageTitle()">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--about"></div>
+          </div>
+        </div></a>
+        <a href="../../resume.html"><div class="btn" onmouseover="showResume()" onmouseout="showPageTitle()">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--resume"></div>
+          </div>
+        </div></a>
+        <a href="../../projects.html"><div class="btn">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--projects"></div>
+          </div>
+        </div></a>
+        <a href="http://blog.geordywilliams.com"><div class="btn" onmouseover="showBlog()" onmouseout="showPageTitle()">
+          <div class="btn-container">
+            <div class="btn-icon btn-icon--blog"></div>
+          </div>
+        </div></a>
+      </div>
+      </nav>
+    </div>
+    </header>
+
+    <main>
+    <div class="content-container">
+      <article>
+      <div class="content-item">
+        <div class="text">
+          <h1 class="title">Visa Summer Project</h1>
+          <div class="underline"></div>
+          <div class="text--reg"><i>Javascript, HTML, CSS, React.js, Yarn, Grails-Maven, Node.js, Sketch</i></div>
+          <br>
+          <div class="text--reg">
+            <p>I interned with Visa in the summer of 2017. I worked on a team of interns to develop a tool that introduces new users to the key features of the modules within Business Center, a product that allows users to manage and configure payment processing services.</p>
+            <p>I was heavily involved in the discovery phase which consisted of research and several brainstorming meetings. During this phase, we decided the direction of the project answering questions like what do we want users to get out of our solution and what does our framework need to be capable of. I conducted research on existing solutions from <a href="https://material.io/guidelines/growth-communications/onboarding.html">Google's Material Design</a> and frameworks like <a href="http://introjs.com/">Intro.js</a>.</p>
+            <p>We decided to create our own framework from scratch inspired by Intro.js for ease of configuration and integration with our application, Business Center. I created the following UI prototypes in Sketch.</p>
+            <p>First, if the user is new to the current module within Business Center and there is a tutorial available, the user will be shown the below prompt. They can skip and never be prompted again or continue onto the tutorial.</p>
+          </div>
+          <img class="pic" src="../../img/visa/prompt.png" alt="prompt image"><br><br>
+          <div class="text--reg">
+            <p>Tutorials consist of a sequence of cards that briefly annotate all the key features on screen. The user is able to use the previous and next buttons to navigate through the tutorial or click the x button to exit. Tutorials are configured using a JSON object which specifies the content and positioning for each card.</p>
+          </div>
+          <img class="pic" src="../../img/visa/card.png" alt="card image"><br><br>
+          <div class="text--reg">
+            <p>I helped with the development of the cards in React. I also wrote the controller which connected the front-end to the back-end.</p>
+          </div>
+          <div class="text--reg">
+            <p>During the discovery phase, we came up with several ideas that didn't make it into the final product.</p>
+            <p>When the user selected 'yes' from the prompt, this tutorial selection menu would launch. There would be in-depth tutorials for each key feature and each feature with a tutorial would be highlighted. After the user clicked on a feature, the tutorial would begin, telling them everything there was to know about that specific feature. Upon completion, they would be brought back to the tutorial selection menu below to select another feature. This idea was discarded due to the user likely wanting a much briefer tutorial experience.</p>
+          </div>
+          <img class="pic" src="../../img/visa/tutorial-selection.png" alt="tutorial selection image"><br><br>
+          <div class="text--reg">
+            <p>We also had an idea for interactive tutorials where we could ask the user to perform an action and evaluate them. We didn't get to this idea although part of it is built into the final product.</p>
+          </div>
+          <img class="pic" src="../../img/visa/card-interactive.png" alt="interactive card image"><br><br>
+        </div>
+      </div>
+      </article>
+
+      <footer>
+        <div class="social">
+          <a href="/">Home</a>&nbsp;&nbsp;-&nbsp;&nbsp;
+          <a href="http://www.github.com/geordyp"><img class="social-logo" src="../../img/logos/github.png" alt="GitHub link"></a>&nbsp;&nbsp;
+          <a href="https://leetcode.com/geordypaul/"><img class="social-logo" src="../../img/logos/leetcode.png" alt="Leet Code link"></a>&nbsp;&nbsp;&nbsp;
+          <a href="http://www.linkedin.com/in/geordy-williams-6068a790/"><img class="social-logo" src="../../img/logos/linkedin.png" alt="LinkedIn link"></a>&nbsp;&nbsp;&nbsp;
+          <a href="http://www.twitter.com/geordypaul"><img class="social-logo" src="../../img/logos/twitter.png" alt="Twitter link"></a>&nbsp;&nbsp;&nbsp;
+          <a href="http://gamercards.exophase.com/psn/user/g-sweeper_6/"><img class="social-logo" src="../../img/logos/playstation.png" alt="PlayStation link"></a>
+        </div>
+        <p class="footer-p">Developed by Geordy Williams (geowilliams6@gmail.com)<br>Thanks for visiting</p>
+      </footer>
+    </div>
+    </main>
+  </div>
+
+  <script>
+    function showAboutMe() {document.getElementById("header-title").innerHTML = "About Me";}
+    function showResume() {document.getElementById("header-title").innerHTML = "Resume";}
+    function showBlog() {document.getElementById("header-title").innerHTML = "Blog";}
+    function showPageTitle() {document.getElementById("header-title").innerHTML = "Projects";}
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-90619631-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+a:link
+{
+	color: #6600CC; 
+}
+a:visited
+{
+	color: color: #6600CC; 
+} 
+a:active 
+{
+	color: #6600CC;
+}
+body
+{
+	font-family: Lucida Sans;
+	background-color: #FFFFFF;
+	color: #6600CC;
+}
+h1, h2, h3, h4, h5, h6
+{
+	font-family: Lucida Sans;
+	color: #6600CC;
+}
+
+table {text-align: left;
+      font-family: Lucida Sans;
+      font-color:#6600CC;
+      font-size: 14px;}

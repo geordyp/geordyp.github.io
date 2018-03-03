@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding-left: 20px;
+  border-width:10px;
+  border-style: solid;
+  border-color: #512888;
+  background-color: #26e0ca;
+  height:96%;
+  overflow:auto;
+}
+.dark{
+  border-width: 10px;
+  border-style: solid;
+  border-color: #0c0411;
+}
+h1 {
+font-family: 'Lobster';
+font-size: 75px;
+}
+p {
+font-family: 'Old Standard TT', serif;
+font-size:40px;
+}
